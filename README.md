@@ -1,36 +1,52 @@
-# SAP-samples/repository-template
-This default template for SAP Samples repositories includes files for README, LICENSE, and .reuse/dep5. All repositories on github.com/SAP-samples will be created based on this template.
-
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The .reuse/dep5 file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the .reuse/dep5 in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# [Title]
-<!-- Please include descriptive title -->
-
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
-
 ## Description
-<!-- Please include SEO-friendly description -->
+This Yeoman generator helps you connect to a SAP BTP Subaccount in Cloud connector, add necessary System Mappings and resources to work access XS Advanced Systems in SAP Business Application Studio (BAS), and generate files for import in SAP BTP Destinations.
 
 ## Requirements
+1. Node.js v18.14.2
+2. Yeoman - If not installed, install it using `npm install -g yo`
+3. XS Advanced CLI client 
+4. Cloud Connector is installed
+5. Ensure you're logged in and the target space is SAP.
+6. You've connected to your SAP BTP Subaccount
 
 ## Download and Installation
+First, build and install the generator using npm:
+
+```bash
+npm install && npm link
+```
+
+## Usage
+
+To start the generator, navigate to the directory where you want to generate your project and run:
+
+```bash
+yo bas-xsa-connectivity
+```
+
+You will be prompted to enter the following information:
+
+1. Cloud Connector Login Url
+2. Cloud Connector Username
+3. Cloud Connector Password
+4. Cloud Connector Location ID
+5. SAP BTP Subaccount Region
+6. SAP BTP Subaccount ID
+7. Directory for Destination Files
+
+Once you have entered the required information, the generator will perform the following tasks:
+
+1. Add necessary System Mappings and resources to work access XS Advanced Systems in SAP Business Application Studio (BAS)
+2. Generate files for import in SAP BTP Destinations
+
+After the generator completes its tasks, you should see your new files in the directory you specified.
+Import these files in your **BTP Subaccount > Connectivity > Destinations**
 
 ## Known Issues
 <!-- You may simply state "No known issues. -->
 
 ## How to obtain support
-[Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
+[Create an issue](https://github.com/SAP-samples/btp-cloud-connector-setup-automation/issues) in this repository if you find a bug or have questions about the content.
  
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
 

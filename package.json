@@ -1,0 +1,17 @@
+{
+    "name": "generator-bas-xsa-connectivity",
+    "version": "1.0.0",
+    "description": "",
+    "files": [
+        "generators"
+    ],
+    "keywords": [
+        "yeoman-generator"
+    ],
+    "dependencies": {
+        "axios": "1.6.1",
+        "yeoman-generator": "5.9.0",
+        "yeoman-environment": "3.2.0"
+    },
+    "type": "module"
+}

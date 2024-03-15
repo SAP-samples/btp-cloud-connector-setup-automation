@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/btp-cloud-connector-setup-automation)](https://api.reuse.software/info/github.com/SAP-samples/btp-cloud-connector-setup-automation)
+
 # SAP BTP Cloud Connector Setup Automation
 
 ## Description
